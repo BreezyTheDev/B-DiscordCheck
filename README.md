@@ -20,11 +20,9 @@ https://forum.cfx.re/t/release-badger-discord-api/1698464
 The following can be found in the ``server.lua`` file.
 ```
 prefix = '^3[^1BreezyDiscordCheck^3] ^3'
-webhookurl = ''
-footertext = ''
-footericon = ''
+
 ```
-You can configure the prefix to match your server name & add a discord webhook.
+You can configure the prefix to match your server name.
 
 
 
