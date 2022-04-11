@@ -1,26 +1,4 @@
 prefix = '^3[^1BreezyDiscordCheck^3] ^3'
-webhookurl = ''
-footertext = ''
-footericon = ''
-
-
-function sendToDisc(title, msg)
-    local embed = {}
-    embed = {
-        {
-            ["color"] = 44270,
-            ["title"] = "**".. title .."**",
-            ["description"] = msg,
-            ["footer"] = {
-                ["text"] = footertext,
-                ["icon_url"] = footericon,
-            },
-        }
-    }
-    PerformHttpRequest(webhookurl, 
-    function(err, text, headers) end, 'POST', json.encode({username = name, embeds = embed}), { ['Content-Type'] = 'application/json' })
-  -- END
-end
 
 function GetDiscordName(user) 
     return exports.Badger_Discord_API:GetDiscordName(user);
@@ -47,7 +25,6 @@ RegisterCommand('discordcheck', function(source, args, rawCommand)
                 elseif args[1] == "nick" then
                     if GetDiscordNickname(id) ~= nil then
                         TriggerClientEvent('chatMessage', source, prefix .. '^3Player: ^5' .. GetPlayerName(id) .. ' ^3\nDiscord Nickname is: ^5' .. GetDiscordNickname(id))
-                        --SendNUIMessage({discordid = ".. GetDiscordID .."})
                     else
                         TriggerClientEvent('chatMessage', source, prefix .. '^1ERROR: ^5' .. GetPlayerName(id) .. ' ^1does not have a nickname set.')
                     end
