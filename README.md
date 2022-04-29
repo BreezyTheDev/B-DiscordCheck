@@ -1,4 +1,4 @@
-# SDiscordCheck
+# S-DiscordCheck
 
 ## What is it?
 
