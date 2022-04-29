@@ -46,7 +46,7 @@ RegisterCommand('discordcheck', function(source, args, rawCommand)
 end)
 
 
-expectedName = "BreezyDiscordCheck" -- This is the resource and is not suggested to be changed.
+expectedName = "S-DiscordCheck" -- This is the resource and is not suggested to be changed.
 resource = GetCurrentResourceName()
 
 -- check if resource is renamed
