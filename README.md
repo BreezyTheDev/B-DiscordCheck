@@ -1,4 +1,4 @@
-# BreezyDiscordCheck
+# SDiscordCheck
 
 ## What is it?
 
@@ -26,6 +26,6 @@ You can configure the prefix to match your server name.
 
 
 ## Download
-https://github.com/DevBreezy/BreezyDiscordCheck
+https://github.com/DevSmurk/BreezyDiscordCheck
 
 
