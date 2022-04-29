@@ -1,5 +1,5 @@
 author "Breezy#0001"
-description "Staff Chat resource."
+description "Smurk's Discord Check Resource."
 version "1.3"
 
 fx_version "cerulean"
