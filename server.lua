@@ -1,4 +1,4 @@
-prefix = '^3[^1BreezyDiscordCheck^3] ^3'
+prefix = '^3[^1S-DiscordCheck^3] ^3'
 
 function GetDiscordName(user) 
     return exports.Badger_Discord_API:GetDiscordName(user);
@@ -56,10 +56,10 @@ if resource ~= expectedName then
 end
 
 
-print("^0This resource is created by ^5Breezy#0001 ^0for support you can join the ^5discord: ^0https://discord.gg/zzUfkfRHzP")
+print("^0This resource was created by ^5Breezy#0001 ^0for support you can join the ^5discord: ^0https://discord.gg/zzUfkfRHzP")
 
 -- check if resource version is up to date
-PerformHttpRequest("https://raw.githubusercontent.com/DevBreezy/DiscordCheck/main/fxmanifest.lua", function(error, res, head)
+PerformHttpRequest("https://raw.githubusercontent.com/DevSmurk/S-DiscordCheck/main/fxmanifest.lua", function(error, res, head)
     i, j = string.find(tostring(res), "version")
     res = string.sub(tostring(res), i, j + 6)
     res = string.gsub(res, "version ", "")
@@ -70,7 +70,7 @@ PerformHttpRequest("https://raw.githubusercontent.com/DevBreezy/DiscordCheck/mai
     if verFile then
         if tonumber(verFile) < resp then
             print("^1[^4" .. expectedName .. "^1] WARNING^0")
-            print("^4" .. expectedName .. " ^0is outdated. Please update it from ^5https://github.com/DevBreezy/DiscordCheck^0| Current Version: ^1" .. verFile .. " ^0| New Version: ^2" .. resp .. " ^0|")
+            print("^4" .. expectedName .. " ^0is outdated. Please update it from ^5https://github.com/DevSmurk/S-DiscordCheck^0| Current Version: ^1" .. verFile .. " ^0| New Version: ^2" .. resp .. " ^0|")
         elseif tonumber(verFile) > tonumber(resp) then
             print("^1[^4" .. expectedName .. "^1] WARNING^0")
             print("^4" .. expectedName .. "s ^0version number is higher than we expected. | Current Version: ^3" .. verFile .. " ^0| Expected Version: ^2" .. resp .. " ^0|")
@@ -79,6 +79,6 @@ PerformHttpRequest("https://raw.githubusercontent.com/DevBreezy/DiscordCheck/mai
         end
     else
         print("^1[^4" .. expectedName .. "^1] WARNING^0")
-        print("You may not have the latest version of ^4" .. expectedName .. "^0. A newer, improved version may be present at ^5https://github.com/DevBreezy/DiscordCheck^0")
+        print("You may not have the latest version of ^4" .. expectedName .. "^0. A newer, improved version may be present at ^5https://github.com/DevSmurk/S-DiscordCheck^0")
     end
 end)
