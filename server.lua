@@ -1,7 +1,7 @@
 --================================--
 --      S-StaffChat 1.0           --
 --      by SmurkTheDev            --
---		MIT License				  --
+--		GNU v3.0				  --
 --================================--
 
 -- PREFIX/CONFIGURATION --
