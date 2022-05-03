@@ -1,5 +1,5 @@
 author "Creator: SmurkTheDev | Discord: Breezy#0001"
-description "S-StaffChat Vesrion 1.3"
+description "S-StaffChat Version 1.3"
 version "1.3"
 
 fx_version "cerulean"
