@@ -1,4 +1,4 @@
-# S-DiscordCheck
+# B-DiscordCheck
 
 ## What is it?
 
@@ -19,13 +19,13 @@ https://forum.cfx.re/t/release-badger-discord-api/1698464
 
 The following can be found in the ``server.lua`` file.
 ```
-prefix = '^3[^1S-DiscordCheck^3] ^3'
+prefix = '^3[^1B-DiscordCheck^3] ^3'
 ```
 You can configure the prefix to match your server name.
 
 
 
 ## Download
-https://github.com/SmurkTheDev/S-DiscordCheck
+https://github.com/BreezyTheDev/B-DiscordCheck
 
 
