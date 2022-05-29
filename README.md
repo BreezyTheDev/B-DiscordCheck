@@ -29,3 +29,7 @@ You can configure the prefix to match your server name.
 https://github.com/BreezyTheDev/B-DiscordCheck
 
 
+## Preview
+
+https://cdn.discordapp.com/attachments/980340351422312448/980351188799193098/preview.jpg
+
